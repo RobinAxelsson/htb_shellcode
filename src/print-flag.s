@@ -24,7 +24,7 @@ _start:
     syscall      ; read > out read bytes > rax
 
     ; dil = length, rsi = pointer
-    mov dl, al ; dl/rdx length
+    mov dl, al  ; dl/rdx length
     mov al, 1   ; sys_write
     mov dil, 1  ; std_out
     syscall
