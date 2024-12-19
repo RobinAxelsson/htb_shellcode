@@ -1,10 +1,22 @@
 #!/bin/bash
 
+
+# Assessment 1 https://academy.hackthebox.com/module/85/section/909
+# xor rbx with stack
+assf ./src/fix-loaded-shellcode.s
+# get the shellcode in the debugger (so easy to copy wrong)
+loader.py 4831c05048bbe671167e66af44215348bba723467c7ab51b4c5348bbbf264d344bb677435348bb9a10633620e771125348bbd244214d14d244214831c980c1044889e748311f4883c708e2f74831c0b0014831ff40b7014831f64889e64831d2b21e0f054831c04883c03c4831ff0f05
+#HTB{4553mbly_d3bugg1ng_m4573r}
+
+
+# ------------------------------------
+
 pwn asm 'push rax' -c 'amd64'
 # > 50
 
 pwn disasm '50' -c 'amd64'
 # > 0: 50       push rax
+
 
 pwn disasm '48be0020400000000000bf01000000ba12000000b8010000000f05b83c000000bf000000000f05' -c 'amd64'
 
