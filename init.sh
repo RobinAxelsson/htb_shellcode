@@ -9,3 +9,4 @@ alias shellx="mkdir -p ./output && gcc ./src/shellx.c -o ./output/shellx && ./ou
 alias shellx-db="mkdir -p ./output && gcc -g ./src/shellx.c -o ./output/shellx && gdb -q ./output/shellx"
 alias clean="rm -rf ./output"
 alias testhex="./scripts/testhex.sh"
+alias watch="./scripts/watch.sh"

